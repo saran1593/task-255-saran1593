@@ -18,4 +18,5 @@ app.add_middleware(
 Base.metadata.create_all(bind=engine)
 os.makedirs(UPLOAD_DIR,exist_ok=True)
 
+print("Initializing")
 app.include_router(api)
